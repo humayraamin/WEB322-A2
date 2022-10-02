@@ -13,9 +13,9 @@ module.exports.initialize = function () {
     fs.readFile("./data/departments.JSON", (err, data) => {
       if (err) reject("unable to read file");
       departments = JSON.parse(data);
-      resolve();
+   
     });
-    
+    resolve();
   });
 };
 
